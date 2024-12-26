@@ -9,7 +9,7 @@ app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(cookieParser());
 
-import useRouter from "./routes/user.routes.js";
-app.use("/api/vibeNest/users/", useRouter);
+import userRouter from "./routes/user.routes.js";
+app.use("/api/vibeNest/users/", userRouter);
 
 export default app;
