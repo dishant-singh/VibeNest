@@ -2,8 +2,8 @@ import { Router } from "express";
 
 const router = Router();
 
-router.get("/", (req, res) => {
-  res.send("Login Page");
+router.route("/home").get((req, res) => {
+  res.send("Home Page");
 });
 
 export default router;
